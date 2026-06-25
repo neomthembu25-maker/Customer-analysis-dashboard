@@ -9,6 +9,7 @@ The coffee shop needed to understand:
 •	Why are customers leaving?
 •	How can they improve retention and increase revenue?
 •	Which products drive the most value?
+
 🔑 Key Questions Answered
 •	Who are our most valuable customers (VIPs)?
 •	Which customers are at risk of leaving?
@@ -16,17 +17,19 @@ The coffee shop needed to understand:
 •	How can we improve customer retention?
 •	What is the revenue contribution by product and segment?
 Tool	Purpose
-Microsoft Excel	Data cleaning, analysis, and dashboard creation
-Power Query	Data transformation and preparation
-PivotTables	Data summarization and segmentation
-Power Pivot	Data modeling and relationships
-DAX Formulas	Custom calculations and KPIs
-Slicers & Timeline	Interactive filtering
-Conditional Formatting	Visual highlighting of key metrics
+Microsoft Excel:	Data cleaning, analysis, and dashboard creation
+Power Query:	Data transformation and preparation
+PivotTables:	Data summarization and segmentation
+Power Pivot:	Data modeling and relationships
+DAX Formulas:	Custom calculations and KPIs
+Slicers & Timeline:	Interactive filtering
+Conditional Formatting:	Visual highlighting of key metrics
 ________________________________________
 🛠️ Tools & Technologies
 ________________________________________
 📊 Dashboard Features
+
+
 🔢 Key Performance Indicators (KPIs)
 •	Total Customers: 1,316
 •	Total Revenue: R41,995.69

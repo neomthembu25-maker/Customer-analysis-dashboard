@@ -1,4 +1,4 @@
-☕ Coffee Shop Customer Analysis Dashboard
+#☕ Coffee Shop Customer Analysis Dashboard
 
 📊 Project Overview
 This project analyzes customer behavior for a coffee shop using Microsoft Excel. I built an interactive dashboard to identify customer segments, track spending patterns, and provide actionable insights to improve customer retention and revenue.

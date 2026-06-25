@@ -46,6 +46,59 @@ ________________________________________
 -	Priority Slicer: Filter by customer priority
 -	Timeline: Filter by date range
 ________________________________________
+## 🔍 Data Preparation
+
+### Raw Data
+
+| Attribute | Details |
+|-----------|---------|
+| **Source** | [Kaggle - Coffee Sales Dataset](https://www.kaggle.com/datasets/ihelon/coffee-sales) |
+| **Rows** | 1,700+ transactions |
+| **Columns** | Date, Customer ID, Product, Amount, Payment Type |
+| **Currency** | South African Rands (ZAR) |
+
+### Data Cleaning Process
+
+| Step | Action | Result |
+|------|--------|--------|
+| 1️⃣ | **Removed Duplicates** | Ensured unique customer records |
+| 2️⃣ | **Handled Missing Values** | Separated cash (anonymous) from card customers |
+| 3️⃣ | **Created Customer Portfolio** | Aggregated transactions by customer |
+| 4️⃣ | **Calculated Metrics** | Total Spent, Avg Spend/Visit, Recency, etc. |
+| 5️⃣ | **Segment Classification** | Created segments using business rules |
+
+### Key Excel Formulas Used
+
+```excel
+// Customer Portfolio Formulas
+=SUMIFS(Data!E:E, Data!D:D, A2)                           // Total Spent per Customer
+=MINIFS(Data!B:B, Data!D:D, A2)                           // First Purchase Date
+=MAXIFS(Data!B:B, Data!D:D, A2)                           // Last Purchase Date
+=COUNTIFS(Data!D:D, A2)                                   // Total Visits
+=MAX(Data!B:B) - C2                                       // Recency (Days)
+=D2/E2                                                    // Avg Spend/Visit
+```
+
+```excel
+// Customer Segmentation (Array Formula)
+=IF(AND(TotalVisits>=20, AvgSpend>=35, Recency<=30), "VIP",
+   IF(AND(TotalVisits>=10, AvgSpend>=30, Recency<=60), "Loyal",
+   IF(AND(TotalVisits>=5, AvgSpend>=25, Recency<=90), "Regular",
+   IF(Recency<=30, "Recent",
+   IF(TotalVisits>=2, "Occasional", "At Risk")))))
+```
+
+### Summary Statistics After Cleaning
+
+| Metric | Value |
+|--------|-------|
+| **Raw Transactions** | 1,700+ |
+| **Unique Customers** | 1,316 |
+| **Segments Created** | 6 |
+| **Revenue Analyzed** | R41,995.69 |
+| **Date Range** | March 2024 - March 2025 |
+________________________________________
+
 ## 👥 Customer Segmentation
 
 ### Segment Distribution
@@ -151,58 +204,7 @@ xychart-beta
 
 **📌 Key Takeaway:** VIPs and Loyal customers visit **10-20x more often** than At Risk customers!
 ________________________________________
-## 🔍 Data Preparation
 
-### Raw Data
-
-| Attribute | Details |
-|-----------|---------|
-| **Source** | [Kaggle - Coffee Sales Dataset](https://www.kaggle.com/datasets/ihelon/coffee-sales) |
-| **Rows** | 1,700+ transactions |
-| **Columns** | Date, Customer ID, Product, Amount, Payment Type |
-| **Currency** | South African Rands (ZAR) |
-
-### Data Cleaning Process
-
-| Step | Action | Result |
-|------|--------|--------|
-| 1️⃣ | **Removed Duplicates** | Ensured unique customer records |
-| 2️⃣ | **Handled Missing Values** | Separated cash (anonymous) from card customers |
-| 3️⃣ | **Created Customer Portfolio** | Aggregated transactions by customer |
-| 4️⃣ | **Calculated Metrics** | Total Spent, Avg Spend/Visit, Recency, etc. |
-| 5️⃣ | **Segment Classification** | Created segments using business rules |
-
-### Key Excel Formulas Used
-
-```excel
-// Customer Portfolio Formulas
-=SUMIFS(Data!E:E, Data!D:D, A2)                           // Total Spent per Customer
-=MINIFS(Data!B:B, Data!D:D, A2)                           // First Purchase Date
-=MAXIFS(Data!B:B, Data!D:D, A2)                           // Last Purchase Date
-=COUNTIFS(Data!D:D, A2)                                   // Total Visits
-=MAX(Data!B:B) - C2                                       // Recency (Days)
-=D2/E2                                                    // Avg Spend/Visit
-```
-
-```excel
-// Customer Segmentation (Array Formula)
-=IF(AND(TotalVisits>=20, AvgSpend>=35, Recency<=30), "VIP",
-   IF(AND(TotalVisits>=10, AvgSpend>=30, Recency<=60), "Loyal",
-   IF(AND(TotalVisits>=5, AvgSpend>=25, Recency<=90), "Regular",
-   IF(Recency<=30, "Recent",
-   IF(TotalVisits>=2, "Occasional", "At Risk")))))
-```
-
-### Summary Statistics After Cleaning
-
-| Metric | Value |
-|--------|-------|
-| **Raw Transactions** | 1,700+ |
-| **Unique Customers** | 1,316 |
-| **Segments Created** | 6 |
-| **Revenue Analyzed** | R41,995.69 |
-| **Date Range** | March 2024 - March 2025 |
-________________________________________
 📸 Dashboard Preview
   
 ________________________________________

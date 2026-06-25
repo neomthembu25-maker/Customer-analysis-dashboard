@@ -1,55 +1,52 @@
-#☕ Coffee Shop Customer Analysis Dashboard
+# ☕Coffee Shop Customer Analysis Dashboard
 
-📊 Project Overview
+## 📊 Project Overview
 This project analyzes customer behavior for a coffee shop using Microsoft Excel. I built an interactive dashboard to identify customer segments, track spending patterns, and provide actionable insights to improve customer retention and revenue.
 
-🎯 Business Problem
+### 🎯 Business Problem
 The coffee shop needed to understand:
-•	Who are their most valuable customers?
-•	Why are customers leaving?
-•	How can they improve retention and increase revenue?
-•	Which products drive the most value?
+-	Who are their most valuable customers?
+-	Why are customers leaving?
+-	How can they improve retention and increase revenue?
+-	Which products drive the most value?
 
-🔑 Key Questions Answered
-•	Who are our most valuable customers (VIPs)?
-•	Which customers are at risk of leaving?
-•	What products do different customer segments prefer?
-•	How can we improve customer retention?
-•	What is the revenue contribution by product and segment?
+### 🔑 Key Questions Answered
+-	Who are our most valuable customers (VIPs)?
+-	Which customers are at risk of leaving?
+-	What products do different customer segments prefer?
+-	How can we improve customer retention?
+-  What is the revenue contribution by product and segment?
 
-Tool	Purpose
-Microsoft Excel:	Data cleaning, analysis, and dashboard creation
-Power Query:	Data transformation and preparation
-PivotTables:	Data summarization and segmentation
-Power Pivot:	Data modeling and relationships
-DAX Formulas:	Custom calculations and KPIs
-Slicers & Timeline:	Interactive filtering
-Conditional Formatting:	Visual highlighting of key metrics
+### Tool & Purpose
+- Microsoft Excel:	Data cleaning, analysis, and dashboard creation
+- Power Query:	Data transformation and preparation
+- PivotTables:	Data summarization and segmentation
+- Power Pivot:	Data modeling and relationships
+- DAX Formulas:	Custom calculations and KPIs
+- Slicers & Timeline:	Interactive filtering
+- Conditional Formatting:	Visual highlighting of key metrics
 ________________________________________
-🛠️ Tools & Technologies
-________________________________________
-📊 Dashboard Features
+## 📊 Dashboard Features
 
+### 🔢 Key Performance Indicators (KPIs)
+-	Total Customers: 1,316
+-	Total Revenue: R41,995.69
+-	Average Spend/Visit: R31.91
 
-🔢 Key Performance Indicators (KPIs)
-•	Total Customers: 1,316
-•	Total Revenue: R41,995.69
-•	Average Spend/Visit: R31.91
-
-📈 Interactive Charts
+### 📈 Interactive Charts
 1.	Customer Segment Distribution - Bar chart showing segment sizes
 2.	Revenue by Segment - Breakdown of revenue contribution
 3.	Product Performance - Revenue and volume by product
 4.	Segment Composition - Customer distribution by segment
 5.	Customer Lifetime Value - Spend patterns by segment
    
-🎛️ Interactive Filters
-•	Segment Slicer: Filter by customer segment
-•	Product Slicer: Filter by favorite product
-•	Priority Slicer: Filter by customer priority
-•	Timeline: Filter by date range
+### 🎛️ Interactive Filters
+-	Segment Slicer: Filter by customer segment
+-	Product Slicer: Filter by favorite product
+-	Priority Slicer: Filter by customer priority
+-	Timeline: Filter by date range
 ________________________________________
-👥 Customer Segmentation
+## 👥 Customer Segmentation
 Segment Definitions
 Segment	Description	Criteria	Customers	% of Total
 VIP	Top customers by spend and frequency	Top 1% by spend, 20+ visits	18	1.4%

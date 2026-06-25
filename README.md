@@ -16,6 +16,7 @@ The coffee shop needed to understand:
 •	What products do different customer segments prefer?
 •	How can we improve customer retention?
 •	What is the revenue contribution by product and segment?
+
 Tool	Purpose
 Microsoft Excel:	Data cleaning, analysis, and dashboard creation
 Power Query:	Data transformation and preparation
@@ -34,12 +35,14 @@ ________________________________________
 •	Total Customers: 1,316
 •	Total Revenue: R41,995.69
 •	Average Spend/Visit: R31.91
+
 📈 Interactive Charts
 1.	Customer Segment Distribution - Bar chart showing segment sizes
 2.	Revenue by Segment - Breakdown of revenue contribution
 3.	Product Performance - Revenue and volume by product
 4.	Segment Composition - Customer distribution by segment
 5.	Customer Lifetime Value - Spend patterns by segment
+   
 🎛️ Interactive Filters
 •	Segment Slicer: Filter by customer segment
 •	Product Slicer: Filter by favorite product

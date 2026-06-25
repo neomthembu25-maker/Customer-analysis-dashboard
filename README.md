@@ -47,11 +47,11 @@ ________________________________________
 -	Timeline: Filter by date range
 ________________________________________
 ## 👥 Customer Segmentation
-Segment Definitions
-Segment	Description	Criteria	Customers	% of Total
-VIP	Top customers by spend and frequency	Top 1% by spend, 20+ visits	18	1.4%
-Loyal	Regular customers with high engagement	10+ visits, consistent spend	26	2.0%
-Regular	Consistent but moderate spenders	5-9 visits, moderate spend	60	4.6%
+### Segment Definitions
+> Segment	Description	Criteria	Customers	% of Total
+- VIP	Top customers by spend and frequency	Top 1% by spend, 20+ visits	18	1.4%
+- Loyal	Regular customers with high engagement	10+ visits, consistent spend	26	2.0%
+- Regular	Consistent but moderate spenders	5-9 visits, moderate spend	60	4.6%
 Recent	New or returning customers	First purchase within 30 days	76	5.8%
 Occasional	Infrequent purchasers	1-4 visits, irregular	147	11.2%
 At Risk	Haven't purchased in 90+ days	No purchase in 90+ days	989	75.1%

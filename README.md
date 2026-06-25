@@ -47,63 +47,109 @@ ________________________________________
 -	Timeline: Filter by date range
 ________________________________________
 ## 👥 Customer Segmentation
+
+### Segment Distribution
+
+```mermaid
+pie title Customer Segment Distribution (1,316 Total Customers)
+    "At Risk (75.1%)" : 989
+    "Occasional (11.2%)" : 147
+    "Recent (5.8%)" : 76
+    "Regular (4.6%)" : 60
+    "Loyal (2.0%)" : 26
+    "VIP (1.4%)" : 18
+```
+
 ### Segment Definitions
-> Segment	Description	Criteria	Customers	% of Total
-- VIP	Top customers by spend and frequency	Top 1% by spend, 20+ visits	18	1.4%
-- Loyal	Regular customers with high engagement	10+ visits, consistent spend	26	2.0%
-- Regular	Consistent but moderate spenders	5-9 visits, moderate spend	60	4.6%
-Recent	New or returning customers	First purchase within 30 days	76	5.8%
-Occasional	Infrequent purchasers	1-4 visits, irregular	147	11.2%
-At Risk	Haven't purchased in 90+ days	No purchase in 90+ days	989	75.1%
-Segment Insights
-🔴 Critical Finding: 75% of Customers Are "At Risk"
-•	989 customers haven't purchased in 90+ days
-•	Represents R16,400+ in potential lost revenue
-•	Recommendation: Launch re-engagement campaign with targeted offers
-🟢 High-Value Segments
-•	VIPs (1.4%) spend 2x more than average customers
-•	Loyal customers account for 10.5% of all visits
-•	Recommendation: Implement loyalty program with exclusive benefits
-________________________________________
-📈 Key Insights
-1. Customer Retention is the Biggest Opportunity
- 
-2. Revenue Distribution by Product
-Product	Revenue (ZAR)	% of Total
-Latte	R28,358.00	25.3%
-Americano with Milk	R25,365.92	22.6%
-Americano	R19,997.04	17.8%
-Cappuccino	R14,573.38	13.0%
-Hot Chocolate	R8,431.50	7.5%
-Cortado	R7,276.22	6.5%
-Cocoa	R6,139.42	5.5%
-Espresso	R2,104.10	1.9%
-Top Performers:
-•	Latte and Americano with Milk together generate 47.9% of total revenue
-•	These two products are the undisputed "cash cows" of the business
-Underperformers:
-•	Espresso accounts for only 1.9% of revenue
-•	Consider promoting espresso-based drinks or bundling them
-3. Monthly Trends (2024-2025)
-•	Peak Months: September (R9,600), October (R9,058), August (R8,264)
-•	Lowest Months: April (R7,670), March (R6,364)
-•	Strong Growth: February 2025 showed highest monthly revenue (R18,253)
-•	Seasonal Pattern: Q3 and Q4 show consistently higher revenue
-4. Segment Product Preferences
-Segment	Top Products	Key Insight
-At Risk	Latte, Americano with Milk	Broad product mix - no clear favorite
-Loyal	Cortado (119 visits), Latte	Strong Cortado loyalty (32% of visits)
-VIP	Americano (198 visits), Latte	Americana preference (47% of visits)
-Regular	Latte, Americano with Milk	Balanced preferences
-Recent	Latte, Americano with Milk	Similar to new customer preferences
-5. Customer Lifetime Value by Segment
-Segment	Avg Visits/Customer	Avg Spend/Visit	Segment Value
-VIP	23.5	R31.51	High
-Loyal	14.3	R31.73	High
-Regular	8.2	R31.85	Medium
-Recent	1.4	R31.47	Low
-Occasional	6.1	R32.47	Medium
-At Risk	1.2	R31.88	Low
+
+| Segment | Description | Criteria | Customers | % of Total |
+|---------|-------------|----------|-----------|------------|
+| **VIP** | Top customers by spend and frequency | Top 1% by spend, 20+ visits | 18 | 1.4% |
+| **Loyal** | Regular customers with high engagement | 10+ visits, consistent spend | 26 | 2.0% |
+| **Regular** | Consistent but moderate spenders | 5-9 visits, moderate spend | 60 | 4.6% |
+| **Recent** | New or returning customers | First purchase within 30 days | 76 | 5.8% |
+| **Occasional** | Infrequent purchasers | 1-4 visits, irregular | 147 | 11.2% |
+| **At Risk** | Haven't purchased in 90+ days | No purchase in 90+ days | 989 | 75.1% |
+
+### Segment Insights
+
+**🔴 Critical Finding: 75% of Customers Are "At Risk"**
+- **989 customers** haven't purchased in 90+ days
+- Represents **R16,400+** in potential lost revenue
+- **Recommendation:** Launch re-engagement campaign with targeted offers
+
+**🟢 High-Value Segments**
+- **VIPs (1.4%)** spend 2x more than average customers
+- **Loyal customers (2.0%)** account for 10.5% of all visits
+- **Recommendation:** Implement loyalty program with exclusive benefits
+
+---
+
+## 📈 Key Insights
+
+### 1. Revenue Distribution by Product
+
+```mermaid
+xychart-beta
+    title "Revenue by Product (ZAR)"
+    x-axis ["Latte", "Am. w/ Milk", "Americano", "Cappuccino", "Hot Choc", "Cortado", "Cocoa", "Espresso"]
+    y-axis "Revenue (ZAR)" 0 --> 30000
+    bar [28358, 25366, 19997, 14573, 8432, 7276, 6139, 2104]
+```
+
+| Product | Revenue (ZAR) | % of Total |
+|---------|---------------|------------|
+| Latte | R28,358.00 | 25.3% |
+| Americano with Milk | R25,365.92 | 22.6% |
+| Americano | R19,997.04 | 17.8% |
+| Cappuccino | R14,573.38 | 13.0% |
+| Hot Chocolate | R8,431.50 | 7.5% |
+| Cortado | R7,276.22 | 6.5% |
+| Cocoa | R6,139.42 | 5.5% |
+| Espresso | R2,104.10 | 1.9% |
+
+**Top Performers:**
+- **☕ Latte** and **🥛 Americano with Milk** together generate **47.9%** of total revenue
+- These two products are the undisputed **"cash cows"** of the business
+
+**Underperformers:**
+- **⚠️ Espresso** accounts for only **1.9%** of revenue
+- Consider promoting espresso-based drinks or bundling them
+
+---
+
+### 2. Segment Product Preferences
+
+| Segment | Top Products | Key Insight |
+|---------|--------------|-------------|
+| **At Risk** | Latte, Americano with Milk | Broad product mix - no clear favorite |
+| **Loyal** | Cortado (119 visits), Latte | Strong Cortado loyalty (32% of visits) |
+| **VIP** | Americano (198 visits), Latte | Americano preference (47% of visits) |
+| **Regular** | Latte, Americano with Milk | Balanced preferences |
+| **Recent** | Latte, Americano with Milk | Similar to new customer preferences |
+
+---
+
+### 3. Customer Lifetime Value by Segment
+
+```mermaid
+xychart-beta
+    title "Average Visits per Customer by Segment"
+    x-axis ["VIP", "Loyal", "Regular", "Occasional", "Recent", "At Risk"]
+    y-axis "Avg Visits" 0 --> 25
+    bar [23.5, 14.3, 8.2, 6.1, 1.4, 1.2]
+```
+
+| Segment | Avg Visits/Customer | Avg Spend/Visit | Segment Value |
+|---------|---------------------|-----------------|---------------|
+| **VIP** | 23.5 | R31.51 | 💎 High |
+| **Loyal** | 14.3 | R31.73 | 💎 High |
+| **Regular** | 8.2 | R31.85 | 📊 Medium |
+| **Recent** | 1.4 | R31.47 | 📉 Low |
+| **Occasional** | 6.1 | R32.47 | 📊 Medium |
+| **At Risk** | 1.2 | R31.88 | 📉 Low |
+
+**📌 Key Takeaway:** VIPs and Loyal customers visit **10-20x more often** than At Risk customers!
 ________________________________________
 🔍 Data Preparation
 Raw Data

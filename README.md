@@ -26,26 +26,6 @@ The coffee shop needed to understand:
 - Slicers & Timeline:	Interactive filtering
 - Conditional Formatting:	Visual highlighting of key metrics
 ________________________________________
-## 📊 Dashboard Features
-
-### 🔢 Key Performance Indicators (KPIs)
--	Total Customers: 1,316
--	Total Revenue: R41,995.69
--	Average Spend/Visit: R31.91
-
-### 📈 Interactive Charts
-1.	Customer Segment Distribution - Bar chart showing segment sizes
-2.	Revenue by Segment - Breakdown of revenue contribution
-3.	Product Performance - Revenue and volume by product
-4.	Segment Composition - Customer distribution by segment
-5.	Customer Lifetime Value - Spend patterns by segment
-   
-### 🎛️ Interactive Filters
--	Segment Slicer: Filter by customer segment
--	Product Slicer: Filter by favorite product
--	Priority Slicer: Filter by customer priority
--	Timeline: Filter by date range
-________________________________________
 ## 🔍 Data Preparation
 
 ### Raw Data
@@ -98,7 +78,34 @@ ________________________________________
 | **Revenue Analyzed** | R41,995.69 |
 | **Date Range** | March 2024 - March 2025 |
 ________________________________________
+## 📊 Dashboard Features
 
+### 🔢 Key Performance Indicators (KPIs)
+-	Total Customers: 1,316
+-	Total Revenue: R41,995.69
+-	Average Spend/Visit: R31.91
+
+### 📈 Interactive Charts
+1.	Customer Segment Distribution - Bar chart showing segment sizes
+2.	Revenue by Segment - Breakdown of revenue contribution
+3.	Product Performance - Revenue and volume by product
+4.	Segment Composition - Customer distribution by segment
+5.	Customer Lifetime Value - Spend patterns by segment
+   
+### 🎛️ Interactive Filters
+-	Segment Slicer: Filter by customer segment
+-	Product Slicer: Filter by favorite product
+-	Priority Slicer: Filter by customer priority
+-	Timeline: Filter by date range
+________________________________________
+  ## 📸 Dashboard Preview
+
+<p align="center">
+  <img width="800" src="https://github.com/neomthembu25-maker/Customer-analysis-dashboard/blob/main/Coffee-Shop-Customer-Portfolio-Analysis/Images/Coffee%20Shop%20Customer%20Analysis.png?raw=true" alt="Coffee Shop Customer Dashboard">
+</p>
+
+*Figure 1: Interactive Coffee Shop Customer Dashboard showing KPIs, segment distribution, and revenue trends.*
+________________________________________
 ## 👥 Customer Segmentation
 
 ### Segment Distribution
@@ -205,9 +212,6 @@ xychart-beta
 **📌 Key Takeaway:** VIPs and Loyal customers visit **10-20x more often** than At Risk customers!
 ________________________________________
 
-📸 Dashboard Preview
-  
-________________________________________
 ## 🚀 How to Use This Dashboard
 
 ### Step 1: Download the File
@@ -344,17 +348,39 @@ coffee-shop-customer-portfolio/
 | **README.md** | Complete project documentation |
 | **LICENSE** | MIT License for open-source use |
 ________________________________________
-📊 Key Metrics Summary
-Metric	Value
-Total Customers	1,316
-Total Revenue	R41,995.69
-Average Spend/Visit	R31.91
-Most Valuable Customer	ANON-0000-0000-0009 (127 visits)
-Top Product	Latte (R28,358)
-Largest Segment	At Risk (989 customers)
-Smallest Segment	VIP (18 customers)
-Best Month	February 2025 (R18,253)
-Worst Month	April 2024 (R7,670)
+## 📊 Key Metrics Summary
+
+| Metric | Value |
+|--------|-------|
+| **Total Customers** | 1,316 |
+| **Total Revenue** | R41,995.69 |
+| **Average Spend/Visit** | R31.91 |
+| **Most Valuable Customer** | ANON-0000-0000-0009 (127 visits) |
+| **Top Product** | Latte (R28,358) |
+| **Largest Segment** | At Risk (989 customers) |
+| **Smallest Segment** | VIP (18 customers) |
+| **Best Month** | February 2025 (R18,253) |
+| **Worst Month** | April 2024 (R7,670) |
+
+### 📊 Quick Overview
+
+```mermaid
+graph LR
+    A[👥 1,316 Customers] --> B[💰 R41,995.69 Revenue]
+    B --> C[💳 R31.91 Avg Spend]
+    D[☕ Latte - Top Product] --> E[📈 R28,358 Revenue]
+    F[🔴 At Risk - 989] --> G[🟢 VIP - 18]
+```
+
+### 📈 Monthly Revenue Range
+
+```mermaid
+xychart-beta
+    title "Monthly Revenue Range"
+    x-axis ["Worst", "Average", "Best"]
+    y-axis "Revenue (ZAR)" 0 --> 20000
+    bar [7670, 8634, 18253]
+```
 ________________________________________
 ## 👨‍💻 About the Author
 
